@@ -1,0 +1,177 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+	
+	
+        <title>THE BOOKSHELF - Online Bookstore</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/addBooks.css">
+        <script src="js/addBooks.js"></script> 
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <a href="../index.php"><div id="logo"></div></a>
+            <input class="searchbar" type="search" placeholder=" Search Title/Author">
+            <input class="searchbutton" type="submit" value=" ">
+            <a href="../userlogin.html"><img class="profile_ico" src="images/icons/user.svg"></a>
+        </div>
+        <ul class="menu">
+            <li class="menu"><a href="../Categories.html">Categories</a></li>
+            <li class="menu"><a href="../Authors.php">Authors</a></li>
+            <li class="menu"><a href="../pre order.php">Pre Order Books</a></li>
+            <li class="menu"><a href="../Contact us.html">Contact us</a></li>
+            <li class="menu"><a href="../FAQ.html">FAQ</a></li>
+        
+            <li class="menu" style="float: right;"><a href="../cart.php"><img height="20px" src="images/cart.png"></a></li>
+        </ul>
+        <!--Header-->
+        <br>
+
+        
+        <!--Page Content-->
+
+
+
+
+
+
+          <center>
+		<h1><br><p style="color:blue;">Add new books</p> </h1>
+        <br></center>
+		
+		
+		
+		
+		<a href="displayDetails.php"><h2>Display all books</h2></a>
+		<a href="updBooks.php"><h2>Update</h2></a>
+		
+		
+<title> Add Books </title>
+<hr style="height:2px;border-width:0;color:black;background-color:blue"></hr>
+<div class= "productdata">
+
+<table border="1" align="center" width="50%">
+<tr>
+<th align="center"> 
+<img src="images/download.png" align="right">
+
+
+
+
+
+
+
+<form method="POST" action="submitAddBooks.php">
+
+
+
+
+
+
+<center>
+<ul type="square">
+
+<h2 align="left">Title :<br/>
+<input type ="Text" name="Title" class="field-style field-split" size="80" placeholder="Title" required>
+<h2 align="left">Author :<br/>
+<input type = "text" name="Author" size="80" placeholder="Author" required>
+<h2 align="left">Publisher :<br/>
+<input type="text" name="Publisher" size="80" placeholder="Publisher" required>
+<h2 align="left">Year :<br/>
+<input type="text" name = "Year" size="80" placeholder="Year" required>
+<h2 align="left">Price :<br/>
+<input type ="text" name ="Price" size="80" placeholder="price" required>
+</center>
+</div>
+</h3>
+</th>
+<img src = "images/addBook.jpg" align = "left" height="250" alt="Add new book" title="Add new book">
+<img src = "images/laptop-book-animation.gif" align = "right" height="250" alt="Add new book" title="Add new book">
+
+
+</tr>
+</table><br/>
+ </ul>
+ <center>
+ 
+ <img src="images/addbook.png" align ="center" height="40">
+ <button type="submit" name="BtnSubmit" class="upload">upload</button>
+<br/><br/>
+
+
+
+
+
+
+
+<img src="images/cancel.jpg" align ="center" height="40"> 
+ <button type ="submit" name="Btncancel" class="cancel"><a herf="index.php">cancel</a></button>
+
+
+ <br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ </center>
+ 
+</form>
+ <br/><br/><br/><br/>
+
+
+   
+
+
+ 
+
+
+
+        <!--Page Content-->
+<br/><br/><br/>
+        <!--Footer-->
+        <div class="footer">
+            <img src="images/footer_img.png" style="float: right; width: 30%; padding: 0px 10px;">
+            <div class="paymentMethods">
+                <img src="images/icons/mastercard_logo.png">
+                <img src="images/icons/visa_logo.png">
+                <img src="images/icons/american_express.png">
+            </div>
+            <table style=" padding-left: 80px; text-align: left; float: left;">
+                <tr>
+                    <th class="footerDetails"><a class="footerLinks" href="index.html">thebookshelf.com</a></th>
+                    <th class="footerDetails">Customer services</th>
+                    <th class="footerDetails"><a class="footerLinks" href="contact us.html">Contact us</a></th>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="about us.html">About us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="account.html">My Account</a></td>
+                    <td class="footerDetails">E-mail  :support@thebookshelf.com</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="privacy policy.html">Privacy policy</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="cart.html">Shoping cart</td>
+                    <td class="footerDetails">Mobile  :+94 774598647</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="Contact us.html">Contact us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="payment methods.html">Payment Methods</a></td>
+                </tr>
+            </table>
+        </div>
+        <!--Footer-->
+    </body>
+</html>

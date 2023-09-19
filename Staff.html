@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE BOOKSHELF - Online Bookstore</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script src="js/script.js"></script> 
+
+
+   <style>
+
+     body{
+              background-image:url("https://cdn.pixabay.com/photo/2017/08/10/02/05/tiles-shapes-2617112_1280.jpg");
+              background-size:cover;
+              background-repeat:no-repeat;
+         }
+
+
+     .tab{
+               height:100px;
+               width:60%;
+               
+        }
+      .din button {
+                background-color: grey;
+                border: 1px solid grey; 
+                color: white; 
+                 padding:10px 38px 10px 38px; 
+               
+           
+            
+
+}
+.din{
+             margin-left:170px;
+             margin-top:70px;
+            margin-right:100px;
+     }
+
+
+
+
+
+
+
+
+  .shin button {
+                background-color:#004d13;
+               border: 1px solid grey; 
+             color: white;
+            padding: 13px 40px 13px 40px; 
+          
+          
+}
+.shin{
+          
+             margin-top:70px;
+             margin-left:180px;
+             margin-right:80px;
+ }
+
+
+
+
+
+
+  .tin button {
+                background-color:#004d13;
+               border: 1px solid grey; 
+             color: white;
+            padding: 12px 8px; 
+            
+           
+         
+}
+.tin{
+
+             margin-top:70px;
+             margin-left:100px;
+             margin-right:10px;
+           
+ 
+}
+
+
+
+
+
+
+ 
+
+   .submit:hover {
+                       background-color: #3e8e41;
+                    }
+
+   .view1:hover{
+                      background-color: #3e8e41;
+                    }
+
+
+  
+   .view2:hover{
+                      background-color: #3e8e41;
+                    }
+
+
+
+   .input{
+                padding: 18px 8px; 
+                
+             
+       }
+    .submit{
+               padding:12px 65px 12px 65px;
+               font-size:15px; 
+                background-color: grey;
+                border: 1px solid grey; 
+                color: white;
+               cursor:pointer;
+               
+          }
+
+  .hit{
+
+      background-color: brown; 
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+     text-decoration: none;
+    display: inline-block;
+     font-size: 50px;
+     border-radius: 50%;
+    
+}
+
+  .mo1{
+
+           margin-top:100px;
+           margin-left:70px;
+    }
+
+
+  .mo2{
+            margin-top:110px;
+           margin-left:200px;
+		   margin-bottom:100px;
+    }
+
+ .m{
+     background-color:black;
+	 padding:10px  10px 10px 10px;
+	 margin:10px 10px 10px 10px;
+	 
+	 }
+ 
+      
+
+
+
+
+  .view1{
+               padding:12px 10px 12px 12px;
+               //font-size:22px; 
+                background-color: grey;
+                border: 1px solid grey; 
+                color: white;
+                float:left;
+                margin-right:30px;
+                 cursor:pointer;
+
+          }
+           
+         .view2{
+
+                 padding:10px 25px 12px 25px; 
+               //padding:12px 65px 12px 65px;
+                //font-size:22px; 
+                background-color: grey;
+                border: 1px solid grey; 
+                color: white;
+                 cursor:pointer;
+
+          }
+               
+  
+
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+          <a href="index.php"><div id="logo"></div></a>
+          <input class="searchbar" type="search" placeholder=" Search Title/Author">
+          <input class="searchbutton" type="submit" value=" ">
+          <a href="userlogin.html"><img class="profile_ico" src="images/icons/user.svg"></a>
+      </div>
+      <ul class="menu">
+          <li class="menu"><a href="../Categories.html">Categories</a></li>
+          <li class="menu"><a href="../Authors.php">Authors</a></li>
+          <li class="menu"><a href="../pre order.php">Pre Order Books</a></li>
+          <li class="menu"><a href="../Contact us.html">Contact us</a></li>
+          <li class="menu"><a href="../FAQ.html">FAQ</a></li>
+
+          <li class="menu" style="float: right;"><a href="../cart.php"><img height="20px" src="images/cart.png"></a></li>
+      </ul>
+
+
+ 
+  <center><div class="m"><h1 style="color:white"><b>STAFF DETAILS</b></h1></div></center>
+ 
+   
+  
+<div style="float:left" class="mo mo1" >
+  <button class="hit"><a href="updateStaff.html">Update</a></button>
+ </div>
+   
+   
+
+
+    
+   <div style="float:left" class="shin" >
+   <button ><font size=6>Delete </font></button><br><br>
+   <form method="post" action="shin.php">
+   <font color="black"><font size=5><b> Enter staff Id:</b></font></font><br>
+   <input type="text" name="DeleteStaffID" class="input"><br><br>
+   <input type="submit" value="Delete" name="BtnSubmit" class="submit">
+   </form>
+   </div>
+
+
+   <div style="float:left" class="tin" >
+   <button ><font size=6>view details</font></button><br><br>
+   <form method="post" action="View.php">
+   <font color="black"><font size=5><b>Enter staff Id:</b></font></font><br>
+   <input type="text" name="EmployeeID" class="input"><br><br>
+   <input type="submit" value="View" name="BtnSubmit" class="view1">
+   </form>
+   <form method="post" action="ViewAll.php">
+   <input type="submit" value="View All" name="BtnSubmit" class="view2">
+   </form>
+   </div>
+
+
+  <button class="hit mo2"><a href="createnew.html">Create</a></button>
+  
+
+
+
+  
+
+
+
+  <br> <br> <br> <br><br> <br>  <br><br><br> <br>           
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Footer-->
+        <div class="footer">
+            <img src="images/footer_img.png" style="float: right; width: 30%; padding: 0px 10px;">
+            <div class="paymentMethods">
+                <img src="images/icons/mastercard_logo.png">
+                <img src="images/icons/visa_logo.png">
+                <img src="images/icons/american_express.png">
+            </div>
+            <table style=" padding-left: 80px; text-align: left; float: left;">
+                <tr>
+                    <th class="footerDetails"><a class="footerLinks" href="index.html">thebookshelf.com</a></th>
+                    <th class="footerDetails">Customer services</th>
+                    <th class="footerDetails"><a class="footerLinks" href="contact us.html">Contact us</a></th>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="about us.html">About us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="account.html">My Account</a></td>
+                    <td class="footerDetails">E-mail  :support@thebookshelf.com</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="privacy policy.html">Privacy policy</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="cart.html">Shoping cart</td>
+                    <td class="footerDetails">Mobile  :+94 774598647</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="Contact us.html">Contact us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="payment methods.html">Payment Methods</a></td>
+                </tr>
+            </table>
+        </div>
+        <!--Footer-->
+    </body>
+</html>

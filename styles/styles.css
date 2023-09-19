@@ -1,0 +1,138 @@
+/*Header*/
+:root{
+    --logo-align: left;
+    --header-height: 85px;
+    --bg-image: url(../images/logo.png);
+    --logo-size: 300px;
+    --header-barW: 800px;
+    --profile-size: 50px;
+}
+@media(max-width: 1300px){
+    :root{
+        --header-barW:  650px;
+    }
+}
+@media(max-width: 1150px){
+    :root{
+        --header-barW:  400px;
+    }
+}
+@media(max-width: 1050px){
+    :root{
+        --header-barW:  400px;
+    }
+}
+@media(max-width: 1000px){
+    :root{
+        --header-barW:  250px;
+    }
+}
+@media(max-width: 750px){
+    :root{
+        --profile-size: 0px;
+        --header-barW: 120px;
+        --header-height: 100px;
+    }
+}
+
+.header{
+    width: 100%;
+    height: var(--header-height ,85px);
+    background-color: #E1F4FC;
+    padding: 8px;
+    margin: -8px;
+    float: center;
+}
+#logo{
+    background: var(--bg-image ,url(../images/logo.png));
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: var(--logo-size, 300px);
+    display: block;
+    margin: auto;
+    padding: auto;
+    float: var(--logo-align ,left);
+}
+.searchbar{
+    margin: 20px -3px 20px 30px;
+    background-color: #8baab8;
+    height: var(--header-barH ,40px);
+    width: var(--header-barW, 800px);
+    font-size: 16px;
+    border-color: #728994;
+    border-radius: 10px 0px 0px 10px;
+    border-style: hidden;
+}
+.searchbutton{
+    background: url(../images/icons/search.svg);
+    background-size: 100%;
+    margin: 10px 0px;
+    background-color: #8cb8cc;
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+    border-color: #9ebfce;
+    border-radius: 0px 10px 10px 0px;
+    border-style: outset;
+    font-size: 16px;
+}
+.profile_ico{
+    height: var(--profile-size ,50px);
+    float: right;
+    margin: 10px 30px;
+}
+ul.menu {
+	list-style-type: none;
+	margin: -8px;
+	padding: 0;
+	background-color: #0098da;
+	overflow: hidden;
+}
+li.menu {
+	float: left;
+}
+li.menu a {
+	display: block;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+	text-align: center;
+	padding: 10px 25px;
+	text-decoration: none;
+}
+li.menu a:hover {
+    background-color: #afdefa;
+}
+/*header*/
+
+
+/* footer */
+.footerDetails {
+    padding: 10px 80px 0px 0px;
+}
+.footer {
+    position: relative;
+    bottom: 0px;
+    height: 250px;
+    width: 100%;
+    background-color: #E1F4FC;
+    padding: 8px;
+    margin: 0px -8px;
+    font-family: Florence, cursive;
+}
+.paymentMethods {
+    margin: 5px 0px 10px 75px;
+}
+div.paymentMethods img {
+    margin: 0px 5px;
+}
+.footerLinks {
+    text-decoration: none;
+    color: #000000;
+}
+.footerLinks:hover {
+    color: #0b006d;
+}
+

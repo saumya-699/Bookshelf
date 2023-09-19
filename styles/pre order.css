@@ -1,0 +1,39 @@
+body{
+	background-color: #afdefa;
+}
+h1 {
+	font-size: 50px;
+	background-color: white;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue
+}
+.book {
+	margin: 50px;
+	padding: 30px;
+	width: 35%;
+	height: 230px;
+	background-color: #4b9fff;
+	display: inline-block;
+}
+.book_img {
+	float: left;
+	height: 230px;
+	width: 160px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+.book_details {
+	font-family: Verdana;
+	font-size: 20px;
+	padding-top: 60px;
+}
+.pre_odr_btn {
+	background-color: #99c9f1;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 15px;
+	margin-top: 50px;
+	float: right;
+}

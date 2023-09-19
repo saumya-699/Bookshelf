@@ -1,0 +1,153 @@
+   valuec<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE BOOKSHELF - Online Bookstore</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/delivery.css">
+        <script src="js/Delivery.js"></script> 
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <a href="../index.php"><div id="logo"></div></a>
+            <input class="searchbar" type="search" placeholder=" Search Title/Author">
+            <input class="searchbutton" type="submit" value=" ">
+            <a href="../userlogin.html"><img class="profile_ico" src="images/icons/user.svg"></a>
+        </div>
+        <ul class="menu">
+            <li class="menu"><a href="../Categories.html">Categories</a></li>
+            <li class="menu"><a href="../Authors.php">Authors</a></li>
+            <li class="menu"><a href="../pre order.php">Pre Order Books</a></li>
+            <li class="menu"><a href="../Contact us.html">Contact us</a></li>
+            <li class="menu"><a href="../FAQ.html">FAQ</a></li>
+        
+            <li class="menu" style="float: right;"><a href="../cart.php"><img height="20px" src="images/cart.png"></a></li>
+        </ul>
+        <!--Header-->
+        <br>
+
+        
+        <!--Page Content-->
+
+
+
+
+
+
+          <center>
+		<h1 style="color:green;">Delivery details</h1>
+        <br></center>
+		
+	<a href="displayDelDetails.php"><h2>Display all details</h2></a>	
+		
+
+<hr style="height:2px;border-width:0;color:black;background-color:blue">
+ 
+<img src = "images/del2.jpg" align = "right" height="250" alt="Delivery books">
+
+<div class="col-50">
+
+ 
+
+<h2 style="color:black;">Informations about you.. </h2>
+          <form method="POST" action="submitDelivery.php">
+<div id="myDiv">
+ 
+<b><mark>Full name:</mark></b><br/>
+<input type="text" name ="full name" size="80px" placeholder= "Amenda Kalpani" required><br/><br/>
+<b><mark>Parcel ID      :</mark></b><br/>
+<input type="Text" name="Parcel_ID" size="80" placeholder="xxxxx" required><br/><br/>
+<b><mark>City           :</mark></b><br/>
+<input type="text" name="City" size="80" placeholder="Gampaha" required><br/><br/>
+<b><mark>Address        :</mark></b><br/>
+<input type ="Text" name="Address" size="80" placeholder="no.xxx/....../....." required><br/><br/>
+<b><mark>Postal code    :</mark></b><br/>
+<input type="text" name="Postal_code" size="80" placeholder="xxxxxx" required><br/><br/>
+<b><mark>Date           :</mark></b><br/>
+<input type = "text" name="date" size="80" placeholder="__/__/____" required><br/><br/>
+<b><mark>No of books    :</mark></b><br/>
+<input type="text" name="No_of_books" size="80" placeholder="Number" required><br/><br/>
+<b><mark>E-mail         :</b><br/>
+<input type="text" name="E-mail" size="80" placeholder="abc@gmail.com" required><br/><br/><br/>
+
+<br/><br/>
+<div class="row">
+<div class ="col-50">
+<h2 style="color:darkorange;" align="center">Payment details.</h2> 
+
+<b><mark>Name on card:</b></mark> <div class="row"
+<div class ="column">
+                <img src="images/icons/mastercard_logo.png">
+                <img src="images/icons/visa_logo.png">
+                <img src="images/icons/american_express.png">
+            </div>
+<input type="text" name = "card_name" size="30" height="5"  placeholder="name on card" required><br/><br/>
+<b><mark>Card number:</mark></b>
+<input type="text" name="card_number" size="30"  placeholder="xxxx-xxxx-xxxx-xxxx" required></br/><br/>
+<b><mark>Expiration date:</mark></b>
+<input type="text" name ="exp" size="30"  placeholder="00/00"required><br/><br/>
+<b><mark>CVV :</mark></b>
+<input type="text" name="cvv" size="30"  placeholder="xxx"required><br/><br/>
+<input type="checkbox" align="center" checked="checked" > Accurate data provoded. 
+</div></div></div></div>
+ <center>
+  
+<img src = "images/d11.jpg" align = "center" height="250" alt="delivery books">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<input type="submit" align="right"  name="BtnSubmit" class="conf" value="Confirm order"/>
+
+ 
+
+
+<br/>
+
+</center>
+
+
+
+</tr>
+</table><br/>
+
+<hr style="height:2px;border-width:0;color:black;background-color:blue">
+
+
+<br/> <br/>
+
+        <!--Page Content-->
+
+        <!--Footer-->
+        <div class="footer">
+            <img src="images/footer_img.png" style="float: right; width: 30%; padding: 0px 10px;">
+            <div class="paymentMethods">
+                <img src="images/icons/mastercard_logo.png">
+                <img src="images/icons/visa_logo.png">
+                <img src="images/icons/american_express.png">
+            </div>
+            <table style=" padding-left: 80px; text-align: left; float: left;">
+                <tr>
+                    <th class="footerDetails"><a class="footerLinks" href="index.html">thebookshelf.com</a></th>
+                    <th class="footerDetails">Customer services</th>
+                    <th class="footerDetails"><a class="footerLinks" href="contact us.html">Contact us</a></th>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="about us.html">About us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="account.html">My Account</a></td>
+                    <td class="footerDetails">E-mail  :support@thebookshelf.com</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="privacy policy.html">Privacy policy</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="cart.html">Shoping cart</td>
+                    <td class="footerDetails">Mobile  :+94 774598647</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="Contact us.html">Contact us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="payment methods.html">Payment Methods</a></td>
+                </tr>
+            </table>
+        </div>
+        <!--Footer-->
+    </body>
+</html>

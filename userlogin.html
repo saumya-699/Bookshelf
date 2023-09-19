@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE BOOKSHELF - Online Bookstore</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script src="js/script.js"></script> 
+
+
+    </head>
+   <style>
+  
+           .midiv{
+
+                     background-color:black;
+                     opacity:0.776;
+                    margin-left:500px;
+                     margin-right:500px;
+                     margin-bottom:100px;
+                    padding:100px 100px 34px 50px;
+
+               }
+
+
+
+                 
+
+                 
+               
+       .validation{ 
+                    margin-bottom:25px;
+                    padding:10px 100px 20px 20px;
+                    margin-left:70px;
+                    font-size:15px;
+                     
+           
+               }
+
+
+
+          
+
+    
+
+
+                     
+                
+
+          .log{
+                     margin-left:70px;
+                     margin-top:25px;
+                     margin-bottom:20px;
+                     padding:10px 122px 10px 122px;
+                     font-size:23px;
+                     
+                     
+            }
+        
+
+    
+         
+       
+   .sin{
+  clip-path: circle(50%);
+  margin-bottom:30px;
+  margin-left:75px;
+ 
+   }
+
+  
+     .lb{        
+                margin-left:67px;
+                margin-top:30px;
+
+             
+        }
+        
+
+    
+
+                    
+               span.sign{
+                           float:right;
+                           
+                            margin-bottom:10px;
+                            margin-top:20px;
+                     }
+                         
+          .can{
+                   margin-left:70px;
+                    margin-top:25px;
+                
+   
+            }
+
+
+          .checkBox{
+
+
+                      margin-left:56px;
+ 
+
+              }
+
+         .admin{
+
+                   margin-left:50px; 
+                  margin-right:20px;
+             }
+
+               
+
+
+  body{
+
+      
+      background-image:url("https://repswanson.com/wp-content/uploads/sites/42/2020/03/Libraries.jpeg");
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position:center;
+}
+
+
+
+     </style>
+  
+
+
+
+
+
+
+
+
+
+
+    <body>
+        <!--Header-->
+        <!--Header-->
+        <div class="header">
+            <a href="index.php"><div id="logo"></div></a>
+            <input class="searchbar" type="search" placeholder=" Search Title/Author">
+            <input class="searchbutton" type="submit" value=" ">
+            <a href="userlogin.html"><img class="profile_ico" src="images/icons/user.svg"></a>
+        </div>
+        <ul class="menu">
+            <li class="menu"><a href="Categories.html">Categories</a></li>
+            <li class="menu"><a href="Authors.php">Authors</a></li>
+            <li class="menu"><a href="pre order.php">Pre Order Books</a></li>
+            <li class="menu"><a href="Contact us.html">Contact us</a></li>
+            <li class="menu"><a href="FAQ.html">FAQ</a></li>
+
+            <li class="menu" style="float: right;"><a href="cart.php"><img height="20px" src="images/cart.png"></a></li>
+        </ul>
+        <!--Header-->
+
+<br> <br> <br> <br>
+       <div class="midiv">    
+       
+ <img src="images/ashi.png" class="sin">
+   
+        
+       
+                     <form method="post" action="loginphp.php">
+                  
+         
+                        <b> <label class="lb"><font size=6><font color= #ff0000>First name</font></font><label></b><br>
+                             <input type="text" placeholder="Enter first name" name="firstName" class="validation" id="firstName" required><br>
+							 
+                        <b> <label class="lb"><font size=6><font color= "blue">Last name</font></font><label></b><br>
+                             <input type="text" placeholder="Enter last name" name="lastName" class="validation" id="lastName" required><br>
+        
+
+                       <b><label class="lb"><font size=6><font color="green">Password</font></font><label></b><br>
+                            <input type="password" placeholder="Enter a password" name="password"  class="validation"  id="password"  required>
+                              <br>
+     
+         
+
+<button type="submit" name="BtnSubmit" class="log" id="LoginBtn"> <font size=5>Login</font></button><br>
+   
+ 
+     
+      <input type="checkbox" checked="checked" name="remember" class="checkBox" id="checkBOX"><font color=#80ccff><font size=4>Remember</font> </font><br>
+
+   
+
+           <font size=4> <button type="button"  name="cancelBtn" id="cancelID" class="can" ><a href="index.php"> cancel</a></button>
+            <button  class="admin" type="button" name="Admin" id="Admin"><a href="adminlogin.html"> Admin</a></button>
+           <span class="sign"> <a href="register.html"><font color=#d633ff>signup</font></a> </span></font>
+        </form>  
+     
+      </div>
+    <!--Footer-->
+      <div class="footer">
+        <img src="images/footer_img.png" style="float: right; width: 30%; padding: 0px 10px;">
+        <div class="paymentMethods">
+            <img src="images/icons/mastercard_logo.png">
+            <img src="images/icons/visa_logo.png">
+            <img src="images/icons/american_express.png">
+        </div>
+        <table style=" padding-left: 80px; text-align: left; float: left;">
+            <tr>
+                <th class="footerDetails"><a class="footerLinks" href="index.php">thebookshelf.com</a></th>
+                <th class="footerDetails">Customer services</th>
+                <th class="footerDetails"><a class="footerLinks" href="contact us.html">Contact us</a></th>
+            </tr>
+            <tr>
+                <td class="footerDetails"><a class="footerLinks" href="about us.html">About us</a></td>
+                <td class="footerDetails"><a class="footerLinks" href="account.html">My Account</a></td>
+                <td class="footerDetails">E-mail  :support@thebookshelf.com</td>
+            </tr>
+            <tr>
+                <td class="footerDetails"><a class="footerLinks" href="privacy policy.html">Privacy policy</a></td>
+                <td class="footerDetails"><a class="footerLinks" href="cart.php">Shoping cart</td>
+                <td class="footerDetails">Mobile  :+94 774598647</td>
+            </tr>
+            <tr>
+                <td class="footerDetails"><a class="footerLinks" href="Contact us.html">Contact us</a></td>
+                <td class="footerDetails"><a class="footerLinks" href="payment methods.html">Payment Methods</a></td>
+            </tr>
+        </table>
+    </div>
+        <!--Footer-->
+    </body>
+</html>

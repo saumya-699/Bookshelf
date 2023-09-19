@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THE BOOKSHELF - Online Bookstore</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script src="js/script.js"></script> 
+
+   <style>
+
+ 
+   
+           .midiv{
+
+                     background-color:#7070db;
+                     opacity:0.776;
+                    margin-left:400px;
+                     margin-right:400px;
+                   height:600px;
+                   
+               }
+
+
+
+  
+ .bu{
+       
+       background-color:#b30059 ;
+       border: none;
+      color: white;
+     //padding: 16px 32px;
+     // padding: 28px 40px;
+      text-align: center;
+     font-size: 16px;
+     margin: 7px  2px;
+    
+      transition: 0.3s;
+      
+
+  }
+
+  #btn1{
+         padding: 28px 40px;
+           
+  }
+
+ #btn2{
+         padding: 28px 120px;
+           
+  }
+  
+ #btn3{
+         padding: 28px 85px;
+           
+  }
+  
+
+
+  .bu:hover {
+  background-color: #3e8e41;
+  color: white;
+  width: 300px;
+    height: 150px;
+  }
+
+         margin-right:100px;
+          margin-left:100px;
+
+          padding:20px 20px 20px 20px;
+          
+     }
+
+
+.man:hover{
+  visibility: visible;
+}
+
+
+  body{
+
+      
+     margin:0;
+     padding:0;
+    
+}
+
+  .slider{
+
+            background-size:cover;
+            background-image:url("books6.jpg");
+           background-repeat:no-repeat;
+           animation:slide 40s infinite;
+     }
+
+    @keyframes slide{
+	
+	              0%
+				  {
+				     
+					 background-image:url("https://forensicstats.org/wp-content/uploads/2019/11/library.jpg");
+				  }
+				  
+				  
+
+                  25%{
+                        background-image:url("https://repswanson.com/wp-content/uploads/sites/42/2020/03/Libraries.jpeg");
+
+                      }             
+
+
+                  50%{
+                        background-image:url("https://se-ktf.univie.ac.at/fileadmin/user_upload/p_sozialethik/Forschung/Bibliothek_Gary_Tamin_stockxchng_658976_69821588.jpg");
+
+                      }    
+
+
+                 
+                  75%{
+                        background-image:url("https://forensicstats.org/wp-content/uploads/2019/11/library.jpg");
+
+                      }    
+
+                   
+                  100%{
+                        background-image:url("https://se-ktf.univie.ac.at/fileadmin/user_upload/p_sozialethik/Forschung/Bibliothek_Gary_Tamin_stockxchng_658976_69821588.jpg");
+
+                      }    
+
+
+
+             }
+
+
+
+
+
+ </style>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+
+
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <a href="index.php"><div id="logo"></div></a>
+            <input class="searchbar" type="search" placeholder=" Search Title/Author">
+            <input class="searchbutton" type="submit" value=" ">
+            <a href="userlogin.html"><img class="profile_ico" src="images/icons/user.svg"></a>
+        </div>
+        <ul class="menu">
+            <li class="menu"><a href="../Categories.html">Categories</a></li>
+            <li class="menu"><a href="../Authors.php">Authors</a></li>
+            <li class="menu"><a href="../pre order.php">Pre Order Books</a></li>
+            <li class="menu"><a href="../Contact us.html">Contact us</a></li>
+            <li class="menu"><a href="../FAQ.html">FAQ</a></li>
+
+            <li class="menu" style="float: right;"><a href="../cart.php"><img height="20px" src="images/cart.png"></a></li>
+        </ul>
+
+
+ 
+<div class="slider">
+<br> <br>
+
+<div class="midiv">
+<br> <br> <br><h1 style="color:black"><center><font size=7><b>Welcome to admin home page</b></font></center></h1><br><br>
+
+
+
+
+
+  
+  
+
+ 
+
+ 
+  <center>
+
+ 
+ <button class="bu" type="button" id="btn1" onclick="ViewAndEdit('btn1')"><a href="Staff.html"><font size=5><font color="white">View and edit staff profile details</font> </font></a></button><br><br>
+
+  <button class="bu" type="button" id="btn2" onclick="AddBook('btn2')"><font size=5><a href="addBooks.html"><font color="white">Add new books</font></a></font> </button><br><br>
+  
+ 
+  </center>
+
+</div>
+<br> <br>
+
+</div>
+
+
+
+
+ 
+    
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+            <img src="images/footer_img.png" style="float: right; width: 30%; padding: 0px 10px;">
+            <div class="paymentMethods">
+                <img src="images/icons/mastercard_logo.png">
+                <img src="images/icons/visa_logo.png">
+                <img src="images/icons/american_express.png">
+            </div>
+            <table style=" padding-left: 80px; text-align: left; float: left;">
+                <tr>
+                    <th class="footerDetails"><a class="footerLinks" href="index.html">thebookshelf.com</a></th>
+                    <th class="footerDetails">Customer services</th>
+                    <th class="footerDetails"><a class="footerLinks" href="contact us.html">Contact us</a></th>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="about us.html">About us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="account.html">My Account</a></td>
+                    <td class="footerDetails">E-mail  :support@thebookshelf.com</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="privacy policy.html">Privacy policy</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="cart.html">Shoping cart</td>
+                    <td class="footerDetails">Mobile  :+94 774598647</td>
+                </tr>
+                <tr>
+                    <td class="footerDetails"><a class="footerLinks" href="Contact us.html">Contact us</a></td>
+                    <td class="footerDetails"><a class="footerLinks" href="payment methods.html">Payment Methods</a></td>
+                </tr>
+            </table>
+        </div>
+        <!--Footer-->
+    </body>
+</html>
